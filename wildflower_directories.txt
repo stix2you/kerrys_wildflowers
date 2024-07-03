@@ -1,0 +1,27 @@
+my-wildflower-app
+│   README.md
+│   package.json
+│   .gitignore
+│
+└───public
+│   │   index.html
+│   │   manifest.json
+│
+└───src
+    │   index.js
+    │   App.js
+    │
+    ├───components
+    │   │   Navbar.js
+    │   │   HamburgerMenu.js
+    │
+    ├───pages
+    │   │   Home.js
+    │   │   Education.js
+    │   │   Seeds.js
+    │   │   CannedProducts.js
+    │   │   Cart.js
+    │
+    ├───assets
+    ├───styles
+    └───utils

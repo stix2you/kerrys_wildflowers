@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Education from './components/Education';
+import Seeds from './components/Seeds';
+import CannedProducts from './components/CannedProducts';
+import Cart from './components/Cart';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div className="App">
+         <Navbar />
+         <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/seeds" element={<Seeds />} />
+            <Route path="/canned-products" element={<CannedProducts />} />
+            <Route path="/cart" element={<Cart />} />
+         </Routes>
+      </div>
+   );
 }
 
 export default App;
