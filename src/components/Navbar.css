@@ -1,20 +1,92 @@
+* {
+   box-sizing: border-box;
+}
+
 .navbar {
+   font-family: Ovo;
+   font-size: 14px;
    display: flex;
-   justify-content: space-between;
+   flex-wrap: wrap;
    align-items: center;
-   padding: 1rem;
+   justify-content: space-between;
+   padding: 2rem;
+   color: #000;
    background-color: #fff;
-   position: fixed;
+   position: relative;
    width: 100%;
    top: 0;
    z-index: 1000;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.header-upper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 10px 0;
+}
+
 .logo {
-   font-family: 'YourDesiredFont', sans-serif;
-   font-size: 1.5rem;
-   font-weight: bold;
+   font-family: Ovo;
+   font-size: 34px;
+   font-weight: normal;
+   align-items: center;
+   padding: 0.5rem 1rem;
+   letter-spacing: 2px;
+}
+
+.search-and-cart {
+   display: flex;
+   position: absolute;
+   right: 20px;
+   top: 40%;
+   column-gap: 20px;
+   text-decoration: none;
+   letter-spacing: 1.5px;
+}
+
+.no-underline {
+   text-decoration: none;
+   position: relative;
+}
+
+.no-underline::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 1px;
+   /* Thickness of the underline */
+   background-color: currentColor;
+   /* Uses the current text color */
+   bottom: -20px;
+   /* Distance from the text */
+   left: 0;
+   transform: scaleX(0);
+   transform-origin: bottom right;
+   /* transition: transform 0.25s ease-out; */
+}
+
+.no-underline:hover::after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+
+
+.header-lower {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+.main-nav,
+.dropdown {
+   background: rgba(255, 255, 255, 0.9);
+   clear: both;
+   transition: all 0.3s linear;
+   animation: fadeIn 0.3s linear none;
 }
 
 .navLinks {
@@ -28,7 +100,8 @@
 
 .navLinks a {
    text-decoration: none;
-   color: #000;
+   color: #444444;
+   /* COLOR FOR THE NAVBAR LINKS */
 }
 
 .hamburgerMenu {
