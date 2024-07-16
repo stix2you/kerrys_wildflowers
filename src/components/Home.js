@@ -10,7 +10,7 @@ function Home() {
          </section>
          <section className="content">
             <div className="image-placeholder">
-               <img src="https://placehold.co/600x400" alt="Placeholder" />
+               <img src="/background.jpg" alt="Background" />
             </div>
             <div className="text-placeholder">
                <h2>Section Title</h2>

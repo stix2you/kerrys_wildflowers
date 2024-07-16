@@ -1,11 +1,11 @@
 .home {
-   padding-top: 80px;
+   padding-top: 0px;
    /* Ensure content is below navbar */
 }
 
 .hero {
    height: 100vh;
-   background: url('https://placehold.co/1920x1080') center center/cover no-repeat;
+   background: url('../../public/background.jpg') center center/cover no-repeat;
    display: flex;
    flex-direction: column;
    justify-content: center;
